@@ -25,7 +25,8 @@ header
 }
 
 #logo {
-  width: 100px;
+  max-width: 100%;
+  width:100px;
   float: left;
 }
 
@@ -60,20 +61,41 @@ projects
 }
 
 .work {
-  display: inline-flex;
-  float: left;
+  display: flex;
   flex-wrap: wrap;
+  float: left;
 }
 
-.one, .two, .three {
+.one,
+.two,
+.three {
   border-radius: 5px;
   display: block;
 }
 
-#first, #second, #third {
-  width: 320px;
-  height: 245px;
+#first {
+  width: 100%;
+}
 
+#second {
+  width: 100%;
+}
+
+#third {
+  width: 100%;
+
+}
+/* media query for smaller screens, targetting the nexus5 screen sizes, the padding left is for space for hamburguer menu*/
+@media screen and (max-width: 361px){
+  .title {
+    font-size: 1em;
+    position: relative;
+    padding-right: 100px;
+  }
+  .subtitle{
+    font-size: 1em;
+    padding-right: 100px;
+  }
 }
 
 /*
